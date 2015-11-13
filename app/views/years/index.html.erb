@@ -1,0 +1,20 @@
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @years.each do |year| %>
+      <tr>
+        <td><%= year.title %></td>
+        <td><%= year.text %></td>
+        <td><%= link_to 'Show', year_path(year) %></td>
+        <td><%= link_to 'Edit', edit_year_path(year) %></td>
+      </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New Year', new_year_path %>
+<%= link_to 'Back', '/' %>

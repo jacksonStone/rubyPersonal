@@ -1,0 +1,15 @@
+
+Showing Year
+
+<p>
+  <strong>Title:</strong>
+  <%= @year.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @year.text %>
+</p>
+
+<%= link_to 'Back', years_path %>
+<%= link_to 'Edit', edit_year_path(@year) %>
